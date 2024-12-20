@@ -1,7 +1,7 @@
 # CampusEase
 
 **CampusEase** is a comprehensive and user-friendly college website created as my final year project during my Diploma in Computer Engineering. This project is designed to serve as an all-in-one solution for college-related information and management. It simplifies navigation and provides essential resources for students, faculty, and visitors.
-
+![Project Screenshot](screenshot.png)
 ## Features
 
 - **Home Page**: Provides an overview of the college with quick access to key sections.
