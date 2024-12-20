@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Student Login</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/Myfevicon.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      #main_container {
+        margin: 15% 150px 30px 150px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .get-log-btn {
+        color: #fff !important;
+        background-color: var(--primary) !important;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 32px;
+        padding: 8px 16px;
+        text-align: center;
+    cursor: pointer;
+      }
+      .get-log-btn:hover{
+        box-shadow: 0px 0 18px  rgba(0, 0, 0, 0.521);
+      }
+      .showBack {
+        background-image: url("./assets/img/bg.jpg");
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+      }
+
+      .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        width: 50%;
+      }
+      .text-blue {
+        color: var(--primary);
+      }
+      #uname {
+        background-image: url("./assets/img/user.png"); /* Add a search icon to input */
+        background-size: auto 50%;
+        background-position: 10px 12px; /* Position the search icon */
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 100%; /* Full-width */
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-bottom: 12px; /* Add some space below the input */
+      }
+
+      #pass {
+        background-image: url("./assets/img/padlock.png"); /* Add a search icon to input */
+        background-size: auto 50%;
+        background-position: 10px 12px; /* Position the search icon */
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 100%; /* Full-width */
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-bottom: 12px; /* Add some space below the input */
+      }
+      @media (max-width: 900px) {
+        .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -48%);
+          color: white;
+          width: 85%;
+        }
+        #main_container {
+        margin: 20% 50px 30px 50px;
+      }
+      }
+      @media (max-width: 400px) {
+        .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -48%);
+          color: white;
+          width: 85%;
+        }
+        #main_container {
+        margin: 45% 50px 30px 50px;
+      }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center container-head">
+        <a href="index.html" class="logo me-auto"
+          ><img src="assets/img/logo.png" alt="" class="img-fluid"
+        /></a>
+        <div class="headline">
+          <div class="sub-headline">
+            <p>Seva Shikshan Prasark Mandal's</p>
+          </div>
+          <div class="main-headline">
+            <h5>
+              Dr.N.J.Paulbudhe Institute Of Technology (Polytechnic),Ahmednagar
+            </h5>
+          </div>
+          <!-- <h1 class="logo me-auto"><a href="index.html">DR.N.J.P.I.T</a></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <div
+      class="w3-row w3-round-large showBack"
+      id="main_container"
+    >
+      <div
+        class="w3-row w3-card w3-shadow w3-round-large"
+        style="border-radius: 10px"
+      >
+        <div class="hero-image">
+          <div class="hero-text">
+            <div class="container card" style="opacity: 0.8; padding: 20px">
+              <form name="StudloginForm" method="POST" action="server.php">
+                <div>
+                  <label for="uname" style="float: left"
+                    ><h5>Email Address</h5></label
+                  >
+                  <input
+                    type="text"
+                    id="uname"
+                    name="uname"
+                    placeholder="abc@gmail.com"
+                    class="text-blue"
+                  />
+                </div>
+                <div>
+                  <label for="uname" style="float: left"
+                    ><h5 class="w3-text-black">Password</h5></label
+                  >
+                  <input
+                    type="password"
+                    id="pass"
+                    name="pass"
+                    placeholder="******"
+                    class="text-blue"
+                  />
+                </div>
+                <div class="row">
+                  <p>
+                    <button
+                      onclick="return(validateLoginFields())"
+                      id="getStudentLoginIn"
+                      name="getStudentLoginIn" class="get-log-btn"
+                    >
+                      GET ME LOGGED-IN
+                    </button>
+                  </p>
+                </div>
+                <div>
+                  <h6>
+                    <a href="signup.php" style="float: left"
+                      >New Student?<br /><span class="text-blue"
+                        >Register here</span
+                      ></a
+                    >
+                  </h6>
+                  <h6 style="float: right">
+                    <a href="forgetPass.php"
+                      >Forgot Password?<br /><span class="text-blue"
+                        >Click here</span
+                      ></a
+                    >
+                  </h6>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function validateLoginFields() {
+        if (document.StudloginForm.uname.value === "") {
+          alert("Please enter your email address.");
+          document.StudloginForm.uname.focus();
+          return false;
+        }
+        if (document.StudloginForm.pass.value === "") {
+          alert("Please enter your password.");
+          document.StudloginForm.pass.focus();
+          return false;
+        }
+        if (document.StudloginForm.pass.value.length < 6) {
+          alert("Please check your password cannot be less than 6 characters.");
+          document.StudloginForm.pass.focus();
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>

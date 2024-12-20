@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Institute-PORTAL</title>
+    <!-- Favicons -->
+    <link href="assets/img/Myfevicon.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="./assets/css/style.css" rel="stylesheet" />
+  </head>
+  <style>
+    a {
+      text-decoration: none;
+    }
+
+    #main_login_container {
+      margin-left: 300px;
+      margin-right: 300px;
+      margin-top: 14%;
+    }
+
+    @media (max-width: 900px) {
+      #main_login_container {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    .w3-row::before {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .w3-center {
+      text-align: center !important;
+    }
+    .w3-padding-16{
+        padding-top: 16px!important;
+    padding-bottom: 16px!important;
+    }
+    .w3-container {
+      padding: 0.01em 16px;
+    }
+    .w3-card {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+    .w3-shadow {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+    #middlehalf {
+      padding: 20px 15px;
+    }
+    .w3-input {
+      padding: 8px;
+      display: block;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+    }
+    .w3-half {
+      float: left;
+      width: 100%;
+    }
+    .w3-btn {
+      border: none;
+      display: inline-block;
+      padding: 8px 16px;
+      vertical-align: middle;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      background-color: #068fff;
+      text-align: center;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .w3-white{
+        color: #000!important;
+    background-color: #fff!important;
+    }
+  </style>
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center container-head">
+        <a href="index.html" class="logo me-auto"
+          ><img src="assets/img/logo.png" alt="" class="img-fluid"
+        /></a>
+        <div class="headline">
+          <div class="sub-headline">
+            <p>Seva Shikshan Prasark Mandal's</p>
+          </div>
+          <div class="main-headline">
+            <h5>
+              Dr.N.J.Paulbudhe Institute Of Technology (Polytechnic),Ahmednagar
+            </h5>
+          </div>
+          <!-- <h1 class="logo me-auto"><a href="index.html">DR.N.J.P.I.T</a></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main>
+    <div class="w3-row" style="padding-bottom: 32px">
+      <div
+        class="w3-container w3-card w3-shadow w3-padding-16"
+        id="main_login_container"
+      >
+        <form name="loginForm" method="POST">
+          <div class="w3-row" id="middlehalf">
+            <label for="loginType"
+              >Login Type<span style="color: red">*</span></label
+            >
+            <select class="w3-input" name="loginType" id="loginType">
+              <option value="">Select your type</option>
+              <option value="iadminlogin">Institute Admin Login</option>
+              <option value="PRINCIPAL">Principal Login</option>
+              <option value="HOD">HOD Login</option>
+              <option value="stafflogin">Staff Login</option>
+            </select>
+          </div>
+          <div class="w3-row">
+            <div class="w3-half" id="middlehalf">
+              <label for="instUsername"
+                >Username<span style="color: red">*</span></label
+              >
+              <input
+                class="w3-input"
+                type="text"
+                id="instUsername"
+                name="instUsername"
+              />
+            </div>
+            <div class="w3-half" id="middlehalf">
+              <label for="instPassword"
+                >Password<span style="color: red">*</span></label
+              >
+              <input
+                class="w3-input"
+                type="password"
+                id="instPassword"
+                name="instPassword"
+              />
+            </div>
+          </div>
+          <div class="w3-row w3-center" id="middlehalf">
+            <input
+              class="w3-btn"
+              onclick="return(validateLoginFields())"
+              type="submit"
+              style="
+                width: 100%;
+                color: white;
+                border-radius: 100px;
+                margin-top: 5px;
+              "
+              id="loginInstUser"
+              value="Get me Logged In"
+              name="loginInstUser"
+            />
+            <div style="margin-top: 1rem;">
+              Forgot Password?
+              <a
+                href=""
+                style="text-decoration: none; color:#068fff"
+                >Click Here!</a
+              >
+            </div>
+            <!--<p>New Member? <a href="register.php" style="text-decoration: none;color: #00295a">Register Here!</a></p>-->
+          </div>
+        </form>
+      </div>
+    </div>
+    </main>
+    <footer>
+        <!-- <div class="container d-md-flex py-4 w3-row">
+
+            <div class="me-md-auto text-center text-md-start">
+              <div class="copyright">
+                &copy; Copyright <strong><span>paulbudhe</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                Designed by <a href="#">Visionary Trio</a>
+              </div>
+            </div> -->
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/paulbudhe.polytechnic/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+    </footer>
+    <script>
+      function validateLoginFields() {
+        if (document.loginForm.loginType.value === "") {
+          alert("Please provide your login type.");
+          document.loginForm.loginType.focus();
+          return false;
+        }
+        if (document.loginForm.instUsername.value === "") {
+          alert("Please enter your username.");
+          document.loginForm.instUsername.focus();
+          return false;
+        }
+        if (document.loginForm.instPassword.value === "") {
+          alert("Please enter your password.");
+          document.loginForm.instPassword.focus();
+          return false;
+        }
+        if (document.loginForm.instPassword.value.length < 6) {
+          alert(
+            "Please enter correct password with length greater than 6 characters."
+          );
+          document.loginForm.instPassword.focus();
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>

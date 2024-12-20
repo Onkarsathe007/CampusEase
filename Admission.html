@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Admission</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/Myfevicon.png" rel="icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+  .admission .card {
+  border: 0;
+  padding:60px;
+  margin-bottom: 60px;
+  position: relative;
+  background-color: var(--bg);
+}
+
+.admission .card-img {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  overflow: hidden;
+  z-index: 9;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #36a5ff;
+}
+
+.admission .card-img img {
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.admission .card-body {
+  z-index: 10;
+  background: var(--section-bg);
+  border-top: 4px solid var(--bg);
+  padding: 30px;
+  box-shadow: rgba(40, 40, 83, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  margin-top: -60px;
+  transition: 0.3s;
+}
+.collapsible{
+    background-color: #43adf3;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 4px
+}
+.collapsible:hover{
+  background-color: var(--primary);
+}
+.fa-key{
+  color: white;
+  font-size: 18px;
+  margin-right:10px;
+}
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.click:after {
+    content: "\2212";
+}
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: var(--section-bg);
+}
+.admission .container .row{
+  background-image: linear-gradient(white 99%,#008deb 1%);
+  box-shadow: 0px 0px 30px var(--shadow);
+  border-radius: 4px;
+}
+.admission table thead th , tr{
+  padding: 10px 20px;
+}
+.admission table thead th{
+  border-bottom: 1px solid #ffffff;
+}
+.flex-property{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+ <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center container-head">
+    <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+    <div class="headline">
+    <div class="sub-headline">
+      <p>Seva Shikshan Prasark Mandal's</p>
+  </div>
+  <div class="main-headline">
+      <h5>Dr.N.J.Paulbudhe Institute Of Technology (Polytechnic),Ahmednagar</h5>
+  </div>
+    <!-- <h1 class="logo me-auto"><a href="index.html">DR.N.J.P.I.T</a></h1> -->
+    <!-- Uncomment below if you prefer to use an image logo -->
+
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="Admission.html" class="active">Admission</a></li>
+      <!-- Working Section -->
+      <li class="dropdown"><a href="events.html"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
+        <ul>
+          <li class="dropdown"><a href="News.html">News</a>
+          </li>
+          <li class="dropdown"><a href="EventGallary.html">Event Gallery</a>
+
+        </ul>
+      <!--  -->
+      <li><a href="Portal.html">Portal</a></li>
+
+        <li class="dropdown"><a href="#"><span>Deparments</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li class="dropdown"><a href="CO.html">Computer Enggineering </a>
+            </li>
+            <li class="dropdown"><a href="EE.html">Electrical Enggineering</a>
+            </li>
+            <li><a href="ME.html">Mechanical Enggineering</a></li>
+            <li><a href="CE.html">Civil Enggineering</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+    <!-- .navbar -->
+    <!-- <img src="./assets/img/9040428_moon_stars_icon.svg" id="theme-btn" class="theme-img"> -->
+  </div>
+  </div>
+</header><!-- End Header -->
+
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>Admission</h2>
+        <p>"Experience the thrill of innovation and problem-solving at Collage Hackton, where talented minds come together to create the future of technology. Join us for a day filled with coding challenges, workshops, and networking opportunities."</p>
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Admission Section ======= -->
+    <section id="admission" class="admission">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/Admission.jpeg" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <button class="collapsible">
+                <i class="fa fa-key"></i>
+                Eligibility Criteria: First Year Diploma
+              </button>
+              <div class="content w3-justify"> 
+                <p><ul><li><strong>(1) For Maharashtra State Candidature Candidate and All India Candidature
+              Candidate, -</strong></li>
+              <li>(i) The Candidate should be an Indian National;</li>
+              <li>(ii) Passed Diploma Course in Engineering and Technology with at least 45%
+              marks (40% marks in case of candidates of backward class categories,
+              Economically Weaker Section and Persons with Disability belonging to
+              Maharashtra State only) in appropriate branch of Engineering and Technology
+              from an All India Council for Technical Education or Central or State
+              Government approved Institution or its equivalent ;<br>
+              <strong>Or</strong>
+              <li>(ii) Passed B.Sc. Degree from a University Grants Commission (UGC) or
+              Association of Indian Universities recognized University with at least 45%
+              marks (40% in case of candidates of Backward class categories, Economically
+              Weaker Section and Persons with Disability belonging to Maharashtra State
+              only) and passed HSC with Mathematics as a subject.
+              Provided that students belonging to this category shall clear the subjects
+              of Engineering Graphics/ Engineering Drawing and Engineering Mechanics of
+              the first year Engineering Program along with second year subjects.</li><br>
+              <strong>Or</strong>
+              <li>(ii) Passed D.Voc. Stream in the same or allied sector.</li>
+              <li>(iii) In the above cases, a suitable bridge Courses, if required such as in
+              Mathematics may be conducted.</li>
+              <li>(iv) Any other criterion declared from time to time by the appropriate authority as
+              defined under the Act.</li></ul></p>
+              </div><br>
+
+
+
+
+              <button class="collapsible">
+                <i class="fa fa-key"></i>
+                Direct Second Year of Post SSC
+              </button>
+              <div class="content w3-justify"> 
+                <p><ul><li><strong>(1) For Maharashtra State Candidature Candidate and All India Candidature
+              Candidate, -</strong></li>
+              <li>(i) The Candidate should be an Indian National;</li>
+              <li>(ii) Passed 10+2 examination with Physics and Chemistry as compulsory subjects along with Mathematics/ Biology subject. </li> <br>
+              <strong>Or</strong>
+              <li>(iii)10+2 Science (with Mathematics as one of the Subject)</li><br>
+              <strong>Or</strong>
+              <li>(iv) 10+2 Science with Technical.</li>
+              <li>(v) 10th + (2 years ITI) with appropriate Trade  <br>
+                Note: Other than Maharashtra State Candidates shall be <br>
+                eligible for Institution quota only. <br>
+                </li></ul></p>
+              </div><br>
+
+
+
+
+              <button class="collapsible">
+                <i class="fa fa-key"></i>
+                Post HSC in Surface Coating Technology 
+              </button>
+              <div class="content w3-justify"> 
+                <p><ul><li><strong>(1) For Maharashtra State Candidature Candidate and All India Candidature
+              Candidate, -</strong></li>
+              <li>(i) The Candidate should be an Indian National;</li>
+              <li>(ii) Passed HSC Science with subjects English, Physics, Chemistry and Mathematics.
+                Note: Other than Maharashtra State Candidates shall be 
+                eligible for Institution quota only.<br>
+              </li></ul></p>
+              </div><br>
+
+
+
+
+              <button class="collapsible">
+                <i class="fa fa-key"></i>
+                What is Eligibility Crieteria For Admission In Third Year?
+              </button>
+              <div class="content w3-justify"> 
+                <p><ul><li><strong>(1) A candidate shall be eligible for admission to 5th semester / third year on the basis of :
+                   1) Pass in Semester I & II  <br> 
+                   2) Pass / ATKT at Semester III & IV combined</strong></li>
+              
+
+
+
+
+              </div><br>
+              <button class="collapsible">
+                <i class="fa fa-key"></i>
+                List of Documents Required for First Year Diploma (Polytechnic) :
+              </button>
+              <div class="content w3-justify"> 
+                <p><ul><li><strong>(1)10th /SSC Mark sheet SSC / CBSE /ICSE / IGCSE)</strong></li>
+
+              <li><strong>(2)School Leaving Certificate (Latest 2023)
+                (To be submitted at the time of Admissions)</strong></li>
+
+                <li><strong>(3)Nationality Certificate</strong></li>
+
+                <li><strong>(4)Domicile Certificate</strong></li>
+
+                <li><strong>(5)Caste Certificate</strong></li>
+
+                <li><strong>(6)Income Certificate of Year 2022-23 <br>
+                  (Income limit is upto 8.0 Lacs)</strong></li>
+
+                <li><strong>(7)	Non Creamy Layer Certificate (Certificate Valid upto 31-03-2024)</strong></li>
+
+                <li><strong>(8)Eligibility Certificate for Economically Weaker Section (EWS)</strong></li>
+
+                <li><strong>(9)Certificate of Disability (more than 40%)</strong></li>
+
+                <li><strong>(10)Aadhar Card</strong></li>
+
+                </p>
+              </div><br>
+              <hr>
+            <p align="left"><a id="ah"></a>
+            <br><i class="fa fa-phone" style="margin-right: 10px;"></i><strong> Admission  Helpline :</strong>
+            <br> 
+            First Year: +91 9130945632 <br> Direct Second Year: +91 8087027826<hr>
+           <p align="left">&nbsp;</p>
+            </div>
+          </div>
+      </div><br>
+
+      
+
+      <div class="row"  style="padding-bottom: 16px;">
+        
+        <h2  style="color: #00295a;"></h2>
+   <div class="container card">
+     <div class="row" style="box-shadow: rgba(40, 40, 83, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;padding: 20px 0;">
+      <div class="flex-property">
+        <h3><a id="bec">Diploma Courses</a></h3>
+    </div>
+       <div style="overflow-x:auto;">
+  <table>
+   <thead valign="middle" >
+     <tr  style="background-color: #068FFF">
+       <th rowspan="2">Sr. No.</th>
+       <th rowspan="2" >Course Name</th>
+     <th rowspan="2"> Course Starting Year </th>
+             <th colspan="2">General Choice Code</th>
+     <th colspan="2">TFWS Choice Code</th>
+     </tr>
+     <tr  style="background-color: #068FFF">
+       <th>Intake</th>
+       <th>Choice code</th>
+       <th>Intake</th>
+       <th>Choice code</th>
+     </tr>
+     <tr  style="background-color: #ffffff">
+       <th>1</th>
+       <th>Computer Enggineering</th>
+       <th>2021</th>
+       <th>60</th>
+       <th>513991610</th>
+       <th>2</th>
+       <th>513991611T</th>
+       </tr>
+
+     <tr  style="background-color: #f7f7f7">
+       <th>2</th>
+       <th>Electrical Enggineering </th>
+       <th>2021</th>
+       <th>60</th>
+       <th>513984410</th>
+       <th>3</th>
+       <th>513984411T</th>
+       </tr>
+
+   <tr  style="background-color: #ffffff">
+       <th>3</th>
+       <th>Civil Enggineering</th>
+       <th>1983</th>
+       <th>60</th>
+       <th>513950710</th>
+       <th>3</th>
+       <th>513950711T</th>
+       </tr>
+     <tr  style="background-color: #f7f7f7">
+       <th>4</th>
+       <th>Mechanical Enggineering</th>
+       <th>1983</th>
+       <th>60</th>
+       <th>513919110</th>
+       <th>3</th>
+       <th>513919111T</th>
+       </tr>
+   
+    
+   </thead>
+ </table>
+ 
+      </div>
+     </div>
+     </div>
+    </section><!-- End Events Section -->
+
+  </main><!-- End #main -->
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>DR.NJPIT</h3>
+          <p>
+            Solapur Road, <br>
+            Survey No-479,  <br>
+            Narayandho 414201, <br>
+            Ahmednagar,<br>
+            Maharashtra,<br>
+            India. <br>
+
+            <br>
+            <strong>Phone:</strong>+91 9421518995<br>
+            <strong>Email:</strong> polytecpaulbudhe@gmail.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="about.html>About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Courses</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Comuter Enggineering</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Electrical Enggineering</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Civil Enggineering</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Mechanical Enggineering</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Join Our Newsletter</h4>
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-md-flex py-4">
+
+    <div class="me-md-auto text-center text-md-start">
+      <div class="credits">
+        <div class="copyright">
+          &copy; Copyright <strong><span>2024</span></strong>
+        </div>
+      <div class="credits">
+      
+      </div>
+    </div>
+    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="https://www.instagram.com/paulbudhe.polytechnic/" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+  </div>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("click");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
