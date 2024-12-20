@@ -1,4 +1,4 @@
-# NJIT-Website  
+# Dr NJIT Website  
 
 ### **Description**  
 The **NJIT-Website** is a fully functional, responsive web application developed for **Dr. N.J. Powell Institute of Technology**. This platform digitizes various college operations, offering a seamless experience for students, faculty, and administrators.  
@@ -26,4 +26,4 @@ The **NJIT-Website** is a fully functional, responsive web application developed
 ### **Setup Instructions**  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/your-username/njit-website.git  
+   git clone https://github.com/Onkarsathe007/CampusEase.git 
